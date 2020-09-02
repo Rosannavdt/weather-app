@@ -22,6 +22,10 @@ li {
   padding: 0;
 }
 
+input {
+  max-width: 300px;
+}
+
 .weather-app-wrapper {
   max-width: 750px;
   margin: 30px auto;
@@ -59,4 +63,13 @@ li {
 
 #description {
   text-transform: capitalize;
+}
+
+.col-5 {
+  padding: 0;
+}
+
+.col-3 {
+  margin-left: 0;
+  padding: 0px 0px 0px 10px;
 }
