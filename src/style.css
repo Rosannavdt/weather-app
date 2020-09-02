@@ -26,6 +26,10 @@ input {
   max-width: 300px;
 }
 
+h3 {
+  font-size: 23px;
+}
+
 .weather-app-wrapper {
   max-width: 750px;
   margin: 30px auto;
@@ -39,7 +43,7 @@ input {
 }
 
 .temperatureBlock {
-  margin-top: 20px;
+  margin-top: 55px;
   margin-bottom: 10px;
 }
 
@@ -61,8 +65,16 @@ input {
   text-align: right;
 }
 
+#city-date-block {
+  margin-top: 30px;
+}
+
+#extra-information {
+  margin-bottom: 30px;
+}
 #description {
   text-transform: capitalize;
+  margin-left: 15px;
 }
 
 .col-5 {
