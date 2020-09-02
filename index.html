@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;600&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -30,25 +31,25 @@
                     class="float-left"
                   />
                   <div class="float-left">
-                    <strong>12</strong>
+                    <strong id="temperature"></strong>
                     <span class="units"> °C | <a href="#">°F </a></span>
                   </div>
                 </div>
               </div>
-              <div>Sunny Day</div>
+              <div id="description">Sunny Day</div>
             </div>
             <div class="col-6">
-              <h1>New York</h1>
+              <h1 id="city"></h1>
               <ul class="date">
-                <li>08:00</li>
-                <li>Tuesday</li>
-                <li>September, 1, 2020</li>
+                <li id="time">08:00</li>
+                <li id="day">Tuesday</li>
+                <li id="date">September, 1, 2020</li>
               </ul>
             </div>
           </div>
           <ul>
-            <li>Humidity: 73%</li>
-            <li>Wind: 2</li>
+            <li>Humidity <span id="humidity"> </span>%</li>
+            <li>Wind <span id="wind"></span> km/h</li>
           </ul>
         </div>
         <small>
