@@ -9,36 +9,50 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <div class="row">
-          <div class="col-5">
-            <img
-              src="https://pngimg.com/uploads/sun/sun_PNG13449.png"
-              alt="Sunny day"
-            />
-            12 °C | °F
-            <div>Sunny Day</div>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="row">
+            <div class="col-6">
+              <div class="temperatureBlock">
+                <div class="clearfix weather-temperature">
+                  <img
+                    src="https://pngimg.com/uploads/sun/sun_PNG13449.png"
+                    alt="Sunny day"
+                    class="float-left"
+                  />
+                  <div class="float-left">
+                    <strong>12</strong>
+                    <span class="units"> °C | <a href="#">°F </a></span>
+                  </div>
+                </div>
+              </div>
+              <div>Sunny Day</div>
+            </div>
+            <div class="col-6">
+              <h1>New York</h1>
+              <ul class="date">
+                <li>08:00</li>
+                <li>Tuesday</li>
+                <li>September, 1, 2020</li>
+              </ul>
+            </div>
           </div>
-          <div class="col-6">
-            <h1>New York</h1>
-            <ul>
-              <li>08:00</li>
-              <li>Tuesday</li>
-              <li>September, 1, 2020</li>
-            </ul>
-          </div>
+          <ul>
+            <li>Humidity: 73%</li>
+            <li>Wind: 2</li>
+          </ul>
         </div>
-        <ul>
-          <li>Humidity: 73%</li>
-          <li>Wind: 2</li>
-        </ul>
+        <small> Open-sourced code, by Rosanna van den Tillaar </small>
       </div>
-      <small> Open-sourced code, by Rosanna van den Tillaar </small>
     </div>
     <script src="src/index.js"></script>
   </body>
