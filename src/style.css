@@ -58,7 +58,8 @@ h3 {
 
 .weather-temperature .units {
   position: relative;
-  top: -25px;
+  margin-left: 200px;
+  bottom: 90px;
 }
 .date {
   font-size: 15px;
@@ -84,4 +85,12 @@ h3 {
 .col-3 {
   margin-left: 0;
   padding: 0px 0px 0px 10px;
+}
+
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
