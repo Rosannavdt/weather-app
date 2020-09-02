@@ -11,6 +11,13 @@ function displayTemperature(response) {
   description.innerHTML = response.data.weather[0].description;
   humidity.innerHTML = response.data.main.humidity;
   wind.innerHTML = Math.round(response.data.wind.speed);
+
+  let icon = document.querySelector("#current-weather-icon");
+  icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  icon.setAttribute("alt", response.data.weather[0].description);
 }
 
 let apiKey = "92a130a46565e7d85d7d55d01afb2d4a";
